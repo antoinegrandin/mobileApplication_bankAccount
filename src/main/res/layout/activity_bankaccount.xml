@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <TextView
+        android:id="@+id/textView_account_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/label_textView_account_message"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:background="@drawable/back"
+        android:layout_width="305dp"
+        android:layout_height="632dp"
+        android:layout_marginTop="12dp"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView_account_message"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_refresh"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_result"
+        android:layout_width="305dp"
+        android:text="@string/refresh_button"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_info_24"
+        android:contentDescription="@string/title_about"
+        android:focusable="true" />
+</RelativeLayout>

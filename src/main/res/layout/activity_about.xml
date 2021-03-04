@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AboutActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/homepage_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/lock_fingerprint_white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView_about_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_textView_about_message"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/homepage_image"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView_about_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_author"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView_about_message"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textView_about_author_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_author_class"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView_about_author"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_version"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView_about_author_class"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

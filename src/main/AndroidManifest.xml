@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.antoinegrandin.bankaccount">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/logo_app_secure"
+        android:installLocation="internalOnly"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BankAccount">
+        <activity android:name="com.antoinegrandin.bankaccount.ChangePinActivity" />
+        <activity android:name="com.antoinegrandin.bankaccount.AboutActivity" />
+        <activity android:name="com.antoinegrandin.bankaccount.AccountActivity" />
+        <activity android:name="com.antoinegrandin.bankaccount.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
