@@ -2,9 +2,9 @@
 
 ## Exercice
 
-Here is the link of my working directory if you are interested in the evolution of my project : https://github.com/antoinegrandin/bank_account
+Here is the link of my working directory if you are interested in the evolution of my project or if you want to access to the whole project (not just the src code) : https://github.com/antoinegrandin/bank_account
 
-### Explain how you ensure user is the right one starting the app
+### Explain how you ensure user is the rigSht one starting the app
 
 The first time the application is opened, a message box tells the user that his default code is '123'. Of course, in reality, the user would not see this message and would receive this code by email for example. At the first connection, the user cannot use the fingerprint to unlock the application.
 
